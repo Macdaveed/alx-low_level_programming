@@ -1,5 +1,6 @@
 #include <stdio.h>
-/* main - Entry point
+/**
+ * main - Entry point
  * Return: Always 0 (Success)
  */
 int main(void)
@@ -10,7 +11,7 @@ int main(void)
 
 	for (hundreds = '0'; hundreds <= '9'; hundreds++)
 	{
-		for (tens = '0'; tens <= '9'; ones++)
+		for (tens = '0'; tens <= '9'; tens++)
 		{
 			for (ones = '0'; ones <= '9'; ones++)
 			{
