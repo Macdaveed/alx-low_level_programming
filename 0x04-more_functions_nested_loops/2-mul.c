@@ -1,16 +1,14 @@
-#include <stdio.h>
+#include "main.h"
 /**
- * main - A program that multiplies two integer
- * Return: Always 0 (Success)
+ * main - func checks that checks for a digit (0 through).
+ * @a: a - Variable
+ * @b: b - variable
+ * Return: Always 0
  */
-
-int main(void)
+int mul(int a, int b)
 {
-	int a, b, Result = 0;
-	printf("Type two numbers: ");
-	scanf("%d, %d", &a, &b);
-	Result = a * b;
-	printf("Result is: %d\n"Result);
-	return 0;
-}
+	int mul;
 
+	mul = a * b;
+	return (mul);
+}
