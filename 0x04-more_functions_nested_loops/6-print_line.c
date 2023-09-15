@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * print_line - func draws a straight line in the terminal
- * *@: number of times the character _ should be printed
+ * print_line - func draws a sraight line in the terminal
+ * @n: number of times the character _ should be printed
  */
 void print_line(int n)
 {
@@ -17,7 +17,6 @@ void print_line(int n)
 		{
 			_putchar('_');
 		}
-			_putchar('\n);
+			_putchar('\n');
 	}
 }
-
