@@ -4,7 +4,7 @@
  * @s: The string to be measured
  * Return: The length of a string
  */
-int strlen_recursion(char *s)
+int _strlen_recursion(char *s)
 {
 	int longit = 0;
 
