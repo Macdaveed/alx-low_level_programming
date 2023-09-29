@@ -1,16 +1,29 @@
+#include "main.h"
 /**
- * check_pal - checks the characters recursively for palindrome
- * @s: string to check
- * @i: iterator
- * @len: length of the string
- *
- * Return: 1 if palindrome, 0 if not
+ * wildcmp - compare strings
+ * @s1: pointer to string params
+ * @s2: pointer to string params
+ * Return: pointer to string params
+ * Return: 0
  */
-int check_pal(char *s, int i, int len)
+
+int wildcmp(char *s1, char *s2)
 {
-	if (*(s + i) != *(s + len - 1))
-		return (0);
-	if (i >= len)
-		return (1);
-	return (check_pal(s, i + 1, len - 1));
+	if (*s1 == '\0')
+	{
+		if (*s2 != '\0' && *s2 == '*')
+		{
+			return (wildcmp(s1, s2 * 1));
+		}
+		return (*s2 == '\0');
+	}
+	if (*s2 == '*')
+	{
+		return (wildcmp(s1 + 1, s2) || wildcmp(s1, s2 + 1));
+	}
+	else if (*s1 == *s2)
+	{
+		return (wildcmp(s1 + 1, s2 + 1));
+	}
+	return (0);
 }
