@@ -11,7 +11,7 @@ int _sqrt_recursion(int n)
 {
 	if (n < 0)
 		return (-1);
-	return (actual_sqrt_recusion(n, 0));
+	return (actual_sqrt_recursion(n, 0));
 }
 /**
  * actual_sqrt_recursion _ recurses to find the natural
