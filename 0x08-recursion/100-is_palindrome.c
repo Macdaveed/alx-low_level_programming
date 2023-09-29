@@ -1,4 +1,3 @@
-#include "main.h"
 /**
  * check_pal - checks the characters recursively for palindrome
  * @s: string to check
