@@ -1,6 +1,6 @@
 #include "main.h"
 
-int check_pal(char *s,int i, int len);
+int check_pal(char *s, int i, int len);
 int _strlen_recursion(char *s);
 
 /**
@@ -42,6 +42,6 @@ int check_pal(char *s, int i, int len)
 	if (*(s + i) != *(s + len - 1))
 		return (0);
 	if (i >= len)
-		return (0);
+		return (1);
 	return (check_pal(s, i + 1, len - 1));
 }
