@@ -1,12 +1,14 @@
 #include <stdio.h>
 /**
  * main - A program that print its name
- *
+ * @argc - arguement couter
+ * @argv - arguement vector
  * Return: Always return 0 (Success)
  */
 
-int main(void)
+int main(int argc, char *argv[])
 {
-	printf("Program name: %s\n", __FILE__);
+	(void) argc;
+	printf("Program name: %s\n", argv[0]);
 	return 0;
 }
