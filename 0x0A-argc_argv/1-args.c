@@ -11,6 +11,6 @@ int main(int argc, char *argv[])
 {
 	(void) argv;
 
-	printf("the number of arguments: %d\n", argc);
+	printf("the number of arguments: %d\n", argc - 1);
 	return (0);
 }
