@@ -1,8 +1,9 @@
+#include <stdio.h>
 #include <stdlib.h>
 
 /**
  * main -  A program that multiplies two numbers
- * @argc: argument counter
+ * @argc: number of command line arg.
  * @argv: argument vector
  * Return: Always return 0 (Success)
  */
