@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
- * main - A program that prints its name
- * @argc - arguement count
- * @argv - arguements vector
- * Return: Always return 0 (Success)
+ * main - A program that print its name
+ * @argc: arguement counter
+ * @argv: arguement vector
+ * Return: Always 0 (Success)
  */
 
 int main(int argc, char *argv[])
