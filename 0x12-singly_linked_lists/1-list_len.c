@@ -6,7 +6,7 @@
  *
  * Return: the number of elements
  */
-size_t list_len(const list_t *h);
+size_t list_len(const list_t *h)
 {
 	size_t count = 0;
 
